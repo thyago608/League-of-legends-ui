@@ -17,26 +17,26 @@ export const Container = styled.div`
   }
 
   > div:nth-child(2) {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 
     background: var(--blue);
     border-radius: 50%;
 
     position: fixed;
-    top: 30px;
-    right: 100px;
+    top: 5px;
+    right: 130px;
   }
 
   > div:nth-child(3) {
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
 
     border-radius: 50%;
     background: var(--gray-light);
 
     position: fixed;
-    top: 70px;
+    top: 25px;
     right: 70px;
   }
   > div:nth-child(4) {
