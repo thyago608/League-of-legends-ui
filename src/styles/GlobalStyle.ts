@@ -14,6 +14,11 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  body{
+    font-family: 'Aldrich', sans-serif;
+    font-weight: 700;
+  }
+
   ul{
     list-style:none;
   }
@@ -21,5 +26,4 @@ export const GlobalStyle = createGlobalStyle`
   a{
     text-decoration: none;
   }
-
 `;

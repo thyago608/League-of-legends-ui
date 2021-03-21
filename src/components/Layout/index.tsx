@@ -1,9 +1,10 @@
 import { Container } from "./styles";
+import { Header } from "../Header";
 
 export function Layout() {
   return (
     <Container>
-      <h1></h1>
+      <Header />
     </Container>
   );
 }
