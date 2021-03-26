@@ -16,7 +16,6 @@ export const Container = styled.main`
     background-repeat: no-repeat;
     filter: contrast(80%);
     height: 90%;
-
     position: relative;
   }
 
@@ -41,7 +40,6 @@ export const Container = styled.main`
 
     img {
       height: 1000px;
-
       position: absolute;
       top: -100px;
       right: -100px;

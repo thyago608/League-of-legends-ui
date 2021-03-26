@@ -1,6 +1,6 @@
 import riotImg from "../../assets/riot.png";
 import llImg from "../../assets/ll.png";
-import { Container, Navigation } from "./styles";
+import { Container, Navigation, ListIcon } from "./styles";
 
 const Nav = () => {
   return (
@@ -48,6 +48,7 @@ export function Header() {
       <div className="container-avatar">
         <div className="avatar"></div>
         <span>Unepickid</span>
+        <ListIcon />
       </div>
     </Container>
   );

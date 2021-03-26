@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BiCaretDown } from "react-icons/bi";
 
 export const Container = styled.header`
   background: #111111;
@@ -39,15 +40,15 @@ export const Container = styled.header`
   }
   .container-avatar {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    padding-left: 100px;
 
     .avatar {
       width: 30px;
       height: 30px;
-
       border-radius: 50%;
-      background: #505155;
+      background: var(--gray-light);
+      margin: 0 15px;
     }
 
     span {
@@ -57,6 +58,9 @@ export const Container = styled.header`
 `;
 
 export const Navigation = styled.nav`
+  position: relative;
+  z-index: 1111111;
+
   ul {
     display: flex;
     justify-content: space-evenly;
@@ -70,11 +74,21 @@ export const Navigation = styled.nav`
         font-size: 13px;
         font-family: "Montserrat";
         transition: filter 0.2s;
+        cursor: pointer;
 
         &:hover {
           filter: brightness(0.8);
         }
       }
+    }
+  }
+`;
+
+export const ListIcon = styled(BiCaretDown)`
+  svg {
+    width: 5px;
+    height: 5px;
+    path {
     }
   }
 `;
