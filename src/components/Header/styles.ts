@@ -6,12 +6,15 @@ export const Container = styled.header`
   border-radius: 10px 10px 0 0;
 
   display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
 
   .container-logos {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    position: relative;
+    width: 70%;
+    margin-left: 20px;
 
     img:first-child {
       width: 50px;
@@ -21,6 +24,17 @@ export const Container = styled.header`
     img {
       width: 25px;
       height: 25px;
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+
+      width: 2px;
+      height: 30%;
+      background: white;
+
+      position: absolute;
     }
   }
   .container-avatar {
@@ -35,15 +49,10 @@ export const Container = styled.header`
       border-radius: 50%;
       background: #505155;
     }
+
     span {
       color: var(--gray-light);
     }
-  }
-
-  .white-bar {
-    width: 100%;
-    height: 100px;
-    background: var(--gray-light);
   }
 `;
 
@@ -58,7 +67,7 @@ export const Navigation = styled.nav`
       a {
         padding: 0px 10px;
         color: var(--gray-light);
-        font-size: 15px;
+        font-size: 13px;
         font-family: "Montserrat";
         transition: filter 0.2s;
 

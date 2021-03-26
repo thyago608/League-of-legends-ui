@@ -6,5 +6,4 @@ export const Container = styled.div`
   position: fixed;
   top: 60px;
   left: 5%;
-  z-index: 111;
 `;
