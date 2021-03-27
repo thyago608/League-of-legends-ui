@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { BiCaretDown } from "react-icons/bi";
+import { BsCaretDownFill } from "react-icons/bs";
 
 export const Container = styled.header`
   background: #111111;
@@ -84,11 +84,9 @@ export const Navigation = styled.nav`
   }
 `;
 
-export const ListIcon = styled(BiCaretDown)`
-  svg {
-    width: 5px;
-    height: 5px;
-    path {
-    }
-  }
+export const ListIcon = styled(BsCaretDownFill)`
+  width: 12px;
+  height: 12px;
+  color: white;
+  margin-left: 10px;
 `;

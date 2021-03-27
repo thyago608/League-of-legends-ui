@@ -9,7 +9,6 @@ export function Footer() {
         <UserCard />
         <UserCard />
       </div>
-      <div className="white-bar"></div>
     </Container>
   );
 }
