@@ -7,9 +7,10 @@ export const Container = styled.section`
   position: relative;
   padding: 20px;
   margin-left: 50px;
+
   img {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
 
     position: absolute;
     top: 10px;

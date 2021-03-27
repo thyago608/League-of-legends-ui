@@ -1,12 +1,16 @@
 import styled from "styled-components";
+import { DrukWide } from "../../fonts/Font";
 
 export const Container = styled.main`
-  height: 600px;
+  ${DrukWide}
+
+  height: 650px;
   background: var(--blue);
+  position: relative;
 
   .white-bar {
     background: white;
-    height: 60px;
+    height: 50px;
   }
 
   .background {
@@ -14,20 +18,20 @@ export const Container = styled.main`
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: contrast(80%);
+    opacity: 0.6;
+    filter: contrast(1);
     height: 90%;
-    position: relative;
   }
 
   .container-text {
     position: absolute;
-    top: 100px;
-    left: 0;
+    top: 50px;
+    left: 30px;
 
     p {
-      font-size: 120px;
-      letter-spacing: 10px;
+      font-size: 127px;
       text-transform: uppercase;
+      font-family: "Stalinist One", cursive;
       color: white;
     }
   }
@@ -41,11 +45,34 @@ export const Container = styled.main`
     img {
       height: 1080px;
       position: absolute;
-      top: -120px;
-      right: -140px;
+      top: -190px;
+      right: -130px;
     }
   }
 
   button {
+    position: absolute;
+    top: 460px;
+    left: 180px;
+
+    padding: 15px 50px;
+    font-size: 18px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -10px;
+      left: -10px;
+      border: 1px solid black;
+    }
   }
 `;

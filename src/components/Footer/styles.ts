@@ -8,13 +8,13 @@ export const Container = styled.footer`
   z-index: 11111;
 
   .container-user {
-    width: 90%;
+    width: 89%;
     display: flex;
     justify-content: space-between;
     position: relative;
     z-index: 11111;
 
-    top: -100px;
-    left: -70px;
+    top: -75px;
+    left: -60px;
   }
 `;

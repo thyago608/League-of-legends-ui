@@ -5,15 +5,15 @@ export const Container = styled.div`
   background: var(--black);
 
   > div:nth-child(1) {
-    width: 900px;
-    height: 900px;
+    width: 850px;
+    height: 850px;
 
     border-radius: 50%;
     background: var(--blue);
 
     position: fixed;
     top: -200px;
-    left: -150px;
+    left: -70px;
   }
 
   > div:nth-child(2) {
@@ -29,8 +29,8 @@ export const Container = styled.div`
   }
 
   > div:nth-child(3) {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
 
     border-radius: 50%;
     background: var(--gray-light);
@@ -51,8 +51,8 @@ export const Container = styled.div`
     right: 40px;
   }
   > div:nth-child(5) {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 
     background: #505155;
     border-radius: 50%;
@@ -62,15 +62,15 @@ export const Container = styled.div`
     left: 50px;
   }
   > div:nth-child(6) {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
 
     border-radius: 50%;
     background: white;
 
     position: fixed;
-    bottom: -70px;
-    left: 100px;
+    bottom: -110px;
+    left: 150px;
   }
   > div:nth-child(7) {
     width: 500px;

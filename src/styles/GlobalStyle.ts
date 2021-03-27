@@ -1,6 +1,9 @@
+import { DrukWide } from "../fonts/Font";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+${DrukWide}
+
   :root{
     --blue: #535AFF;
     --gray-light: #EFEFEF;
