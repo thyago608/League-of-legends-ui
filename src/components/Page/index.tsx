@@ -15,6 +15,8 @@ export function Page({ children }: PageProps) {
       <div></div>
       <div></div>
       <div></div>
+      <div className="omit1"></div>
+      <div className="omit2"></div>
       {children}
     </Container>
   );

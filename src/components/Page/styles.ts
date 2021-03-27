@@ -5,15 +5,15 @@ export const Container = styled.div`
   background: var(--black);
 
   > div:nth-child(1) {
-    width: 800px;
-    height: 800px;
+    width: 900px;
+    height: 900px;
 
     border-radius: 50%;
     background: var(--blue);
 
     position: fixed;
-    top: -110px;
-    left: 30px;
+    top: -200px;
+    left: -150px;
   }
 
   > div:nth-child(2) {

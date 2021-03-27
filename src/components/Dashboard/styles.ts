@@ -39,10 +39,13 @@ export const Container = styled.main`
     height: 100%;
 
     img {
-      height: 1000px;
+      height: 1080px;
       position: absolute;
-      top: -100px;
-      right: -100px;
+      top: -120px;
+      right: -140px;
     }
+  }
+
+  button {
   }
 `;

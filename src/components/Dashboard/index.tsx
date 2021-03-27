@@ -10,6 +10,7 @@ export function Dashboard() {
         <p>404 page</p>
         <p>not found</p>
       </div>
+      <button type="button">back to home</button>
       <div className="container-image">
         <img src={woman} alt="" />
       </div>
