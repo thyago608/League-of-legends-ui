@@ -26,6 +26,11 @@ export const Container = styled.header`
       width: 20px;
       height: 20px;
       cursor: pointer;
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
     }
 
     &::after {
@@ -39,9 +44,12 @@ export const Container = styled.header`
     }
   }
   .container-avatar {
+    position: relative;
+    z-index: 44444;
     display: flex;
     align-items: center;
-    padding-left: 105px;
+
+    padding-left: 85px;
 
     .avatar {
       width: 25px;
@@ -53,12 +61,19 @@ export const Container = styled.header`
 
     span {
       color: var(--gray-light);
+      font-size: 11px;
+      transition: filter 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
     }
   }
 `;
 
 export const Navigation = styled.nav`
-  width: 85%;
+  width: 80%;
   position: relative;
   z-index: 1111111;
   margin-left: -60px;
@@ -73,7 +88,7 @@ export const Navigation = styled.nav`
       a {
         padding: 0px 10px;
         color: var(--gray-light);
-        font-size: 12px;
+        font-size: 11px;
         font-family: "Montserrat";
         transition: filter 0.2s;
         cursor: pointer;

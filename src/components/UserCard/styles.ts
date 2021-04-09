@@ -1,11 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { TiSocialTwitter } from "react-icons/ti";
+import { SiDiscord } from "react-icons/si";
 
 export const Container = styled.section`
+  border: solid #bdbdbd 1px;
+  box-shadow: -1px 6px 6px rgba(0, 0, 0, 0.2);
+
   display: flex;
-  border: 1px solid black;
+  flex-direction: column;
   background: white;
+  padding: 5px 5px 10px 80px;
+
   position: relative;
-  padding: 20px;
   margin-left: 50px;
 
   img {
@@ -15,13 +21,13 @@ export const Container = styled.section`
     position: absolute;
     top: 10px;
     left: -20px;
+    cursor: pointer;
   }
 
-  .content-text {
+  .container-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 70px;
+    font-size: 14px;
 
     > span {
       margin-top: 3px;
@@ -29,4 +35,23 @@ export const Container = styled.section`
       filter: brightness(140%);
     }
   }
+  .container-icons {
+    margin-top: 10px;
+  }
+`;
+
+export const ContainerIcons = styled.div``;
+
+const iconCSS = css`
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+`;
+export const TwitterIcon = styled(TiSocialTwitter)`
+  ${iconCSS}
+`;
+
+export const DiscordIcon = styled(SiDiscord)`
+  ${iconCSS}
+  margin-left: 25px;
 `;

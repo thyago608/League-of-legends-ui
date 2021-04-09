@@ -1,14 +1,20 @@
-import { DrukWide } from "../fonts/Font";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-${DrukWide}
-
   :root{
     --blue: #535AFF;
     --gray-light: #EFEFEF;
     --gray-dark:#292C31;
     --black:#1F2326;
+
+    /* Se o font-size estiver em 16px, o tamanho de fonte será 10px  */
+  
+  }
+
+  html{
+    @media(max-width: 1080px){
+        font-size: 93.75%;  
+    }
   }
 
   *{

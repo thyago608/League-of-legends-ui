@@ -1,10 +1,7 @@
 import styled from "styled-components";
-import { DrukWide } from "../../fonts/Font";
 
 export const Container = styled.main`
-  ${DrukWide}
-
-  height: 650px;
+  height: 550px;
   background: var(--blue);
   position: relative;
 
@@ -14,7 +11,7 @@ export const Container = styled.main`
   }
 
   .background {
-    background-image: url("https://i.ibb.co/GF0N8DC/background.png");
+    background-image: url("https://i.ibb.co/VDKxPzS/background.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,7 +26,7 @@ export const Container = styled.main`
     left: 30px;
 
     p {
-      font-size: 127px;
+      font-size: 110px;
       text-transform: uppercase;
       font-family: "Stalinist One", cursive;
       color: white;
@@ -38,21 +35,19 @@ export const Container = styled.main`
 
   .container-image {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: -185px;
+    right: -80px;
     height: 100%;
 
     img {
-      height: 1080px;
-      position: absolute;
-      top: -190px;
-      right: -130px;
+      height: 1010px;
+      object-fit: contain;
     }
   }
 
   button {
     position: absolute;
-    top: 460px;
+    top: 370px;
     left: 180px;
 
     padding: 15px 50px;
@@ -70,8 +65,9 @@ export const Container = styled.main`
       position: absolute;
       width: 100%;
       height: 100%;
-      top: -10px;
+      top: -8px;
       left: -10px;
+      border-radius: 5px 0 0 0;
       border: 1px solid black;
     }
   }
